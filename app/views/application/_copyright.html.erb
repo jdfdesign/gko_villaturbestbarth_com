@@ -1,0 +1,19 @@
+<% cache([site, I18n.locale, 'copyright2']) do %>
+ <!-- Copyright
+================================================== -->
+ <div id='copyright-container' class='container-fluid'>
+   <div id='copyright' class='row-fluid'>
+     <div class="span12">
+	   <%= render_menu('legal') %>
+	   
+       <a id='site-by' href='http://www.joufdesign.com' class="copyright-author" target='_blank'>
+         <%= t(:'site_by', :name => "Jouf Design").html_safe %>
+       </a>
+     </div>
+   </div>
+   <div class='row-fluid'>
+      <div class="span12">
+        <address><%= raw("Tel : +590 (0)590 29 78 28 - Fax : +590 (0)590 29 69 12 - Email : contact@villasturbeimmo.com") %></address>
+      </div>
+ </div>
+<% end %>

@@ -1,0 +1,12 @@
+<% resource_cache(resource) do %>
+	<%= render_slideshow_for(resource && resource.images.any? ? resource : site.home) %>
+	<% if resource.body? %>
+	<div class="content-wrapper">
+		<div id='content-tab'><i class="icon-chevron-right icon-white"></i></div>
+		<div class="content-inner">
+			<%= render_page_title(resource.title) %>
+			<%= render_html_text(resource.body) %>
+		</div>
+	</div>
+	<% end %>
+<% end %>
