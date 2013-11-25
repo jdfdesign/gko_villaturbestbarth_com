@@ -19,7 +19,7 @@
         <!-- Everything you want hidden at 940px or less, place within here -->
         <div class="nav-collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
-          <%= render_primary_menu %>
+          <%= render "primary_menu" %>
 		<%
 		   if !site.drop_down_menu || !resource.is_a?(Home)
 		     if resource.is_a?(Section)
